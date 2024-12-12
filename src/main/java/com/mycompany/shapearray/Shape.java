@@ -9,6 +9,7 @@ package com.mycompany.shapearray;
  * @author kaleyschlimgen
  */
 abstract class Shape {
+    //abstract methods with return type double
     abstract double surface_area();
     abstract double volume();
 }

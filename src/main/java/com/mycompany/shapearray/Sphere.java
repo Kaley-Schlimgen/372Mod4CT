@@ -9,8 +9,10 @@ package com.mycompany.shapearray;
  * @author kaleyschlimgen
  */
 class Sphere extends Shape {
+    //Sphere attributes
     private double radius;
     
+    //implement a parameterized constructor
     public Sphere(double radius) {
         this.radius = radius;
     }
@@ -35,6 +37,7 @@ class Sphere extends Shape {
         return (volume);
     }
     
+    //implement a toString method that prints out the surgace area and volume
     @Override
     public String toString() {
  //get two decimal places here?
@@ -43,7 +46,7 @@ class Sphere extends Shape {
           //      "\nVolume: " + volume() + "\n";
         //return "Surface Area: " + String.format(%.2f, surface_area()) +
         
-        
+        //System.out.println("Sphere Surf A" + surface_area());
         return "Sphere Surface Area: " + surface_area() +
                 "\nSphere Volume: " + volume() + "\n";
         
