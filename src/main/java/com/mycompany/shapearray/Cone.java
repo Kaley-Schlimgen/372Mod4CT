@@ -9,16 +9,39 @@ package com.mycompany.shapearray;
  * @author kaleyschlimgen
  */
 class Cone extends Shape {
+        //Sphere attributes
+    private double radius;
+    private double height;
+    
+    //implement a parameterized constructor
+    public Cone(double radius, double height) {
+        this.radius = radius;
+        this.height = height;
+    }
     
     @Override
     public double surface_area() {
-        //return (Math.PI * Math.pow(radius, 2));
-        return (6);
+//pi*r(r + (SQRT((h^2) + (r^2))) )
+        double surfaceArea = Math.PI * radius * (radius * 
+                (Math.sqrt(Math.pow(height, 2)) + (Math.pow(radius, 2))));
+        return (surfaceArea);
     }
     
     @Override
     public double volume() {
-        return (7);
+//pi*r^2*(h/3)
+        double volume = Math.PI * (Math.pow(radius, 2)) * (height/3);
+        return (volume);
     }
+    
+    @Override
+    public String toString() {
+        return "Cone Surface Area: " + surface_area() +
+                "\nCone Volume: " + volume() + "\n";
+        
+    }
+    
+
+
     
 }

@@ -19,11 +19,10 @@ class Sphere extends Shape {
 
     @Override
     public double surface_area() {
-        //return (Math.PI * Math.pow(radius, 2));
-        //4*pi*r^2
+
         double surfaceArea = 4 * Math.PI * (Math.pow(radius, 2));
         
-        //get two decimal places...
+//get two decimal places...
 //String formattedResult = String.format("%.2f", surfaceArea);
 //return Double.parseDouble(formattedResult);
 

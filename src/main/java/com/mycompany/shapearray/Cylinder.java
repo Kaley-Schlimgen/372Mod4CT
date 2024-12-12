@@ -9,17 +9,39 @@ package com.mycompany.shapearray;
  * @author kaleyschlimgen
  */
 class Cylinder extends Shape {
+        //Sphere attributes
+    private double radius;
+    private double height;
+    
+    //implement a parameterized constructor
+    public Cylinder(double radius, double height) {
+        this.radius = radius;
+        this.height = height;
+    }
     
     @Override
     public double surface_area() {
-        //return (Math.PI * Math.pow(radius, 2));
-        return (4);
+//2pirh + 2pir^2
+        double surfaceArea = (2 * Math.PI * radius * height) + 
+                (2 * Math.PI * (Math.pow(radius, 2)));
+        return (surfaceArea);
     }
     
     @Override
     public double volume() {
-        return (5);
+//pi*r^2*h
+        double volume = Math.PI * (Math.pow(radius, 2)) * height;
+        return (volume);
     }
+    
+    @Override
+    public String toString() {
+        return "Cylinder Surface Area: " + surface_area() +
+                "\nCylinder Volume: " + volume() + "\n";
+        
+    }
+    
+
 
     
 }
