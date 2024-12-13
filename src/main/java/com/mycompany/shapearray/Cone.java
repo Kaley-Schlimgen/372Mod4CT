@@ -22,8 +22,8 @@ class Cone extends Shape {
     @Override
     public double surface_area() {
 //pi*r(r + (SQRT((h^2) + (r^2))) )
-        double surfaceArea = Math.PI * radius * (radius * 
-                (Math.sqrt(Math.pow(height, 2)) + (Math.pow(radius, 2))));
+        double surfaceArea = Math.PI * radius * (radius + 
+                (Math.sqrt((Math.pow(height, 2)) + (Math.pow(radius, 2)))));
         return (surfaceArea);
     }
     

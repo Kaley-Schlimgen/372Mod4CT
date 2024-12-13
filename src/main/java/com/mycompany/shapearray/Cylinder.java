@@ -9,7 +9,7 @@ package com.mycompany.shapearray;
  * @author kaleyschlimgen
  */
 class Cylinder extends Shape {
-        //Sphere attributes
+    //Sphere attributes
     private double radius;
     private double height;
     

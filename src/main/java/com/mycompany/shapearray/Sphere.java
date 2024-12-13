@@ -32,7 +32,7 @@ class Sphere extends Shape {
     @Override
     public double volume() {
         //(4/3)*pi*r^3
-        double volume = (4/3) * Math.PI * (Math.pow(radius, 3));
+        double volume = (4.0/3.0) *  (Math.PI * (Math.pow(radius, 3)));
         return (volume);
     }
     
