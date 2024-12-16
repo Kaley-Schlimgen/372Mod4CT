@@ -21,34 +21,20 @@ class Sphere extends Shape {
     public double surface_area() {
 
         double surfaceArea = 4 * Math.PI * (Math.pow(radius, 2));
-        
-//get two decimal places...
-//String formattedResult = String.format("%.2f", surfaceArea);
-//return Double.parseDouble(formattedResult);
-
         return (surfaceArea);
     }
     
     @Override
     public double volume() {
-        //(4/3)*pi*r^3
         double volume = (4.0/3.0) *  (Math.PI * (Math.pow(radius, 3)));
         return (volume);
     }
     
-    //implement a toString method that prints out the surgace area and volume
+    //implement a toString method that prints out the surface area and volume
     @Override
     public String toString() {
- //get two decimal places here?
-        //String formattedArea = String.format(%.2f, surfaceArea);
-        //return "Surface Area: " + formattedArea() +
-          //      "\nVolume: " + volume() + "\n";
-        //return "Surface Area: " + String.format(%.2f, surface_area()) +
-        
-        //System.out.println("Sphere Surf A" + surface_area());
         return "Sphere Surface Area: " + surface_area() +
                 "\nSphere Volume: " + volume() + "\n";
-        
     }
 }
 

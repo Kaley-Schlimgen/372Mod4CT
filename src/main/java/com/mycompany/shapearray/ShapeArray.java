@@ -11,7 +11,6 @@ package com.mycompany.shapearray;
 public class ShapeArray {
 
     public static void main(String[] args) {
-        
         Shape[] shapeArray = new Shape[3];
     
         //store class instances into an array named "shapeArray"
@@ -26,7 +25,6 @@ public class ShapeArray {
             System.out.println(shape.toString());
         }
         
-     
     }
 }
 
